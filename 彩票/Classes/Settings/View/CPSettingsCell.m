@@ -18,6 +18,7 @@
 
 @implementation CPSettingsCell
 
+#pragma mark - 懒加载方法
 -(UISwitch *)itemSwitch{
     if (_itemSwitch == nil) {
         _itemSwitch = [[UISwitch alloc] init];
@@ -33,6 +34,7 @@
     return _arrow;
 }
 
+#pragma mark - 初始化方法
 +(instancetype)cellWithTableView:(UITableView *)tableView{
     static NSString *ID = @"cell";
     CPSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
@@ -50,6 +52,7 @@
     [self setupAccessoryView];
 }
 
+#pragma mark - 内部方法
 /**
  设置数据
  */

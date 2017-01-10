@@ -11,11 +11,8 @@
 
 @interface CPSettingsCell : UITableViewCell
 
-/**
- 条目
- */
+/**条目*/
 @property (nonatomic, strong) CPSettingsItem *item;
-
 /**
  创建cell
 

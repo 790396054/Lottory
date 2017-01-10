@@ -16,11 +16,8 @@
 #import "MBProgressHUD+MJ.h"
 
 @interface CPSettingsTableViewController ()
-/**
- 数据集合
- */
+/**数据集合*/
 @property (nonatomic, strong) NSMutableArray *dataList;
-
 @end
 
 @implementation CPSettingsTableViewController
@@ -31,17 +28,15 @@
         
         // 第0组
         CPSettingsGroup *group1 = [[CPSettingsGroup alloc] init];
-        CPSettingsItem *morePush = [CPSettingsSwitchItem itemWithTitle:@"推送和提醒" icon:@"MorePush"];
-        CPSettingsItem *handShake = [CPSettingsSwitchItem itemWithTitle:@"摇一摇" icon:@"handShake"];
+        CPSettingsItem *morePush = [CPSettingsArrowItem itemWithTitle:@"推送和提醒" icon:@"MorePush"];
+        CPSettingsItem *handShake = [CPSettingsSwitchItem itemWithTitle:@"摇一摇机选" icon:@"handShake"];
         CPSettingsItem *soundEffect = [CPSettingsSwitchItem itemWithTitle:@"声音效果" icon:@"sound_Effect"];
         group1.item = @[morePush, handShake, soundEffect];
-        group1.header = @"xx";
-        group1.footer = @"ww";
         
         // 第一组
         CPSettingsGroup *group2 = [[CPSettingsGroup alloc] init];
-        CPSettingsItem *moreHelp = [CPSettingsArrowItem itemWithTitle:@"帮助" icon:@"MoreHelp" destVcCalss:[CPTestTableViewController class]];
         CPSettingsItem *moreUpdate = [CPSettingsArrowItem itemWithTitle:@"检查新版本" icon:@"MoreUpdate"];
+        CPSettingsItem *moreHelp = [CPSettingsArrowItem itemWithTitle:@"帮助" icon:@"MoreHelp" destVcCalss:[CPTestTableViewController class]];
         // 保存一段检测更新的代码
         moreUpdate.option = ^{
             // 显示蒙版
@@ -54,16 +49,15 @@
                 [alert show];
             });
         };
-        
         CPSettingsItem *moreShare = [CPSettingsItem itemWithTitle:@"分享" icon:@"MoreShare"];
-        group2.item = @[moreHelp, moreUpdate, moreShare];
-        group2.header = @"第二组头部";
-        group2.footer = @"第二组尾部";
+        CPSettingsItem *moreMessage = [CPSettingsItem itemWithTitle:@"查看消息" icon:@"MoreMessage"];
+        CPSettingsItem *moreNetease = [CPSettingsItem itemWithTitle:@"产品推荐" icon:@"MoreNetease"];
+        CPSettingsItem *moreAbout = [CPSettingsItem itemWithTitle:@"关于" icon:@"MoreAbout"];
+        group2.item = @[moreHelp, moreUpdate, moreShare, moreMessage, moreNetease, moreAbout];
         
         [_dataList addObject:group1];
         [_dataList addObject:group2];
     }
-    
     return _dataList;
 }
 

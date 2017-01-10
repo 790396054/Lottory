@@ -11,16 +11,14 @@
 typedef void(^CPSettingsItemOption)();
 
 @interface CPSettingsItem : NSObject
-/**
- 标题
- */
+/**标题*/
 @property (nonatomic, copy) NSString *title;
-
-/**
- 图标
- */
+/**图标*/
 @property (nonatomic, copy) NSString *icon;
-
+/**
+ 保存一段代码,在恰当的时候调用
+ */
+@property (nonatomic, copy) CPSettingsItemOption option;
 /**
  创建一个设置条目
 
@@ -29,10 +27,5 @@ typedef void(^CPSettingsItemOption)();
  @return 设置条目
  */
 +(instancetype)itemWithTitle:(NSString *)title icon:(NSString *)icon;
-
-/**
- 保存一段代码,在恰当的时候调用
- */
-@property (nonatomic, copy) CPSettingsItemOption option;
 
 @end
