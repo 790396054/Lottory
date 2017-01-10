@@ -112,7 +112,7 @@
     // 执行操作
     if (item.option) {
         item.option();
-        return;
+        return; 
     }
     
     if ([item isKindOfClass:[CPSettingsArrowItem class]]) { // 箭头
