@@ -22,6 +22,8 @@
 		B73D571B1E24D63800D1C701 /* CPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D571A1E24D63800D1C701 /* CPProduct.m */; };
 		B73D571F1E24DE4100D1C701 /* CPProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D571D1E24DE4100D1C701 /* CPProductCell.m */; };
 		B73D57201E24DE4100D1C701 /* CPProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D571E1E24DE4100D1C701 /* CPProductCell.xib */; };
+		B73D57241E24E86300D1C701 /* CPPushTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D57231E24E86300D1C701 /* CPPushTableViewController.m */; };
+		B73D57271E24EB5B00D1C701 /* CPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D57261E24EB5B00D1C701 /* CPTestViewController.m */; };
 		B7B4FF7B1E232C2000D9DB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF791E232C2000D9DB14 /* Main.storyboard */; };
 		B7B4FF7D1E232C2000D9DB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF7C1E232C2000D9DB14 /* Assets.xcassets */; };
 		B7B4FF801E232C2000D9DB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF7E1E232C2000D9DB14 /* LaunchScreen.storyboard */; };
@@ -81,6 +83,10 @@
 		B73D571C1E24DE4100D1C701 /* CPProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProductCell.h; sourceTree = "<group>"; };
 		B73D571D1E24DE4100D1C701 /* CPProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProductCell.m; sourceTree = "<group>"; };
 		B73D571E1E24DE4100D1C701 /* CPProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPProductCell.xib; sourceTree = "<group>"; };
+		B73D57221E24E86300D1C701 /* CPPushTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPushTableViewController.h; sourceTree = "<group>"; };
+		B73D57231E24E86300D1C701 /* CPPushTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPushTableViewController.m; sourceTree = "<group>"; };
+		B73D57251E24EB5B00D1C701 /* CPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTestViewController.h; sourceTree = "<group>"; };
+		B73D57261E24EB5B00D1C701 /* CPTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPTestViewController.m; sourceTree = "<group>"; };
 		B7B4FF6D1E232C2000D9DB14 /* 彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B4FF7A1E232C2000D9DB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7B4FF7C1E232C2000D9DB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +208,17 @@
 				B73D57151E24D61800D1C701 /* products.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		B73D57211E24E85300D1C701 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				B73D57221E24E86300D1C701 /* CPPushTableViewController.h */,
+				B73D57231E24E86300D1C701 /* CPPushTableViewController.m */,
+				B73D57251E24EB5B00D1C701 /* CPTestViewController.h */,
+				B73D57261E24EB5B00D1C701 /* CPTestViewController.m */,
+			);
+			path = Push;
 			sourceTree = "<group>";
 		};
 		B7B4FF641E232C2000D9DB14 = {
@@ -447,6 +464,7 @@
 		B7B4FFD81E238EFA00D9DB14 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B73D57211E24E85300D1C701 /* Push */,
 				B73D570B1E24C69D00D1C701 /* Porduct */,
 				B7B4FFD91E238EFA00D9DB14 /* Controller */,
 				B7B4FFDE1E238EFA00D9DB14 /* Model */,
@@ -665,10 +683,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73D57271E24EB5B00D1C701 /* CPTestViewController.m in Sources */,
 				B7B4FFD11E233CB600D9DB14 /* CPTabBar.m in Sources */,
 				B7B4FFCE1E233CA400D9DB14 /* CPTabBarViewController.m in Sources */,
 				B7B4FFCA1E23381B00D9DB14 /* main.m in Sources */,
 				B73D56FD1E246EB100D1C701 /* CPSettingsArrowItem.m in Sources */,
+				B73D57241E24E86300D1C701 /* CPPushTableViewController.m in Sources */,
 				B73D56F41E2469C100D1C701 /* CPSettingsCell.m in Sources */,
 				B7B4FFD41E2363E400D9DB14 /* CPButton.m in Sources */,
 				B73D57081E24BF8200D1C701 /* MBProgressHUD+MJ.m in Sources */,

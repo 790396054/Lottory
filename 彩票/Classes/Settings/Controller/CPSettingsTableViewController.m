@@ -15,6 +15,7 @@
 #import "CPTestTableViewController.h"
 #import "MBProgressHUD+MJ.h"
 #import "CPProductCollectionViewController.h"
+#import "CPPushTableViewController.h"
 
 @interface CPSettingsTableViewController ()
 /**数据集合*/
@@ -29,7 +30,7 @@
         
         // 第0组
         CPSettingsGroup *group1 = [[CPSettingsGroup alloc] init];
-        CPSettingsItem *morePush = [CPSettingsArrowItem itemWithTitle:@"推送和提醒" icon:@"MorePush"];
+        CPSettingsItem *morePush = [CPSettingsArrowItem itemWithTitle:@"推送和提醒" icon:@"MorePush" destVcCalss:[CPPushTableViewController class]];
         CPSettingsItem *handShake = [CPSettingsSwitchItem itemWithTitle:@"摇一摇机选" icon:@"handShake"];
         CPSettingsItem *soundEffect = [CPSettingsSwitchItem itemWithTitle:@"声音效果" icon:@"sound_Effect"];
         group1.item = @[morePush, handShake, soundEffect];
@@ -112,7 +113,12 @@
     
     if ([item isKindOfClass:[CPSettingsArrowItem class]]) { // 箭头
         CPSettingsArrowItem *arrowItem = (CPSettingsArrowItem *)item;
-        [self.navigationController pushViewController:[[arrowItem.destVcCalss alloc] init] animated:YES];
+        // 创建跳转的控制器
+        if (arrowItem.destVcCalss) {
+            UIViewController *vc = [[arrowItem.destVcCalss alloc] init];
+            vc.title = arrowItem.title;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
     }
 }
 
