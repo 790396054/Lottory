@@ -10,6 +10,7 @@
 #import "CPSettingsGroup.h"
 #import "CPSettingsArrowItem.h"
 #import "CPTestViewController.h"
+#import "CPPushNoticeViewController.h"
 
 @interface CPPushTableViewController ()
 
@@ -29,7 +30,7 @@
     CPSettingsGroup *group0 = [[CPSettingsGroup alloc] init];
     CPSettingsItem *lottoryNumber = [CPSettingsArrowItem itemWithTitle:@"开奖号码推送" icon:nil destVcCalss:[CPTestViewController class]];
     CPSettingsItem *anim = [CPSettingsArrowItem itemWithTitle:@"中奖动画" icon:nil destVcCalss:[CPTestViewController class]];
-    CPSettingsItem *scott = [CPSettingsArrowItem itemWithTitle:@"比分直播提醒" icon:nil destVcCalss:[CPTestViewController class]];
+    CPSettingsItem *scott = [CPSettingsArrowItem itemWithTitle:@"比分直播提醒" icon:nil destVcCalss:[CPPushNoticeViewController class]];
     CPSettingsItem *buy = [CPSettingsArrowItem itemWithTitle:@"购彩定时提醒" icon:nil destVcCalss:[CPTestViewController class]];
     group0.item = @[lottoryNumber, anim, scott, buy];
     return group0;

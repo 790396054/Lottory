@@ -10,15 +10,27 @@
 #import "CPSettingsItem.h"
 #import "CPSettingsSwitchItem.h"
 #import "CPSettingsArrowItem.h"
+#import "CPSettingsLabelItem.h"
 
 @interface CPSettingsCell()
 @property (nonatomic, strong) UISwitch *itemSwitch;
 @property (nonatomic, strong) UIImageView *arrow;
+@property (nonatomic, strong) UILabel *labelText;
 @end
 
 @implementation CPSettingsCell
 
 #pragma mark - 懒加载方法
+-(UILabel *)labelText{
+    if (_labelText == nil) {
+        _labelText = [[UILabel alloc] init];
+        _labelText.bounds = CGRectMake(0, 0, 100, 44);
+        _labelText.font = [UIFont systemFontOfSize:14];
+        _labelText.textAlignment = NSTextAlignmentRight;
+    }
+    return _labelText;
+}
+
 -(UISwitch *)itemSwitch{
     if (_itemSwitch == nil) {
         _itemSwitch = [[UISwitch alloc] init];
@@ -57,10 +69,10 @@
  设置数据
  */
 -(void)setupData{
-    if (self.item.title) {
+    if (self.item.title.length) {
         self.textLabel.text = self.item.title;
     }
-    if (self.item.icon) {
+    if (self.item.icon.length) {
         self.imageView.image = [UIImage imageNamed:self.item.icon];
     }
 }
@@ -75,7 +87,12 @@
     } else if([self.item isKindOfClass:[CPSettingsSwitchItem class]]){ // Switch
         self.accessoryView = self.itemSwitch;
         self.selectionStyle = UITableViewCellSelectionStyleNone;
-    }else {
+    } else if([self.item isKindOfClass:[CPSettingsLabelItem class]]){ // Label
+        self.accessoryView = self.labelText;
+        CPSettingsLabelItem *LabelItem = (CPSettingsLabelItem *)self.item;
+        self.labelText.text = LabelItem.text;
+        self.selectionStyle = UITableViewCellSelectionStyleDefault;
+    } else { // 什么也没有
         self.accessoryView = nil;
         self.selectionStyle = UITableViewCellSelectionStyleDefault;
     }

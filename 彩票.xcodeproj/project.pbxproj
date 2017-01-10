@@ -39,6 +39,8 @@
 		B7B4FFE91E238FA500D9DB14 /* CPSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4FFE81E238FA500D9DB14 /* CPSettingsTableViewController.m */; };
 		B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4FFEB1E2394C000D9DB14 /* CPSettingsItem.m */; };
 		B7E808921E2520FC0093013F /* CPBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E808911E2520FC0093013F /* CPBaseTableViewController.m */; };
+		B7E808951E252A000093013F /* CPPushNoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E808941E252A000093013F /* CPPushNoticeViewController.m */; };
+		B7E808981E252E5E0093013F /* CPSettingsLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E808971E252E5E0093013F /* CPSettingsLabelItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,10 @@
 		B7B4FFEB1E2394C000D9DB14 /* CPSettingsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPSettingsItem.m; path = ../../Profile/Model/CPSettingsItem.m; sourceTree = "<group>"; };
 		B7E808901E2520FC0093013F /* CPBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBaseTableViewController.h; sourceTree = "<group>"; };
 		B7E808911E2520FC0093013F /* CPBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBaseTableViewController.m; sourceTree = "<group>"; };
+		B7E808931E252A000093013F /* CPPushNoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPushNoticeViewController.h; sourceTree = "<group>"; };
+		B7E808941E252A000093013F /* CPPushNoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPushNoticeViewController.m; sourceTree = "<group>"; };
+		B7E808961E252E5E0093013F /* CPSettingsLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSettingsLabelItem.h; sourceTree = "<group>"; };
+		B7E808971E252E5E0093013F /* CPSettingsLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSettingsLabelItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,8 @@
 				B73D57231E24E86300D1C701 /* CPPushTableViewController.m */,
 				B73D57251E24EB5B00D1C701 /* CPTestViewController.h */,
 				B73D57261E24EB5B00D1C701 /* CPTestViewController.m */,
+				B7E808931E252A000093013F /* CPPushNoticeViewController.h */,
+				B7E808941E252A000093013F /* CPPushNoticeViewController.m */,
 			);
 			path = Push;
 			sourceTree = "<group>";
@@ -500,6 +508,8 @@
 				B73D56F91E246E8800D1C701 /* CPSettingsSwitchItem.m */,
 				B73D56FB1E246EB100D1C701 /* CPSettingsArrowItem.h */,
 				B73D56FC1E246EB100D1C701 /* CPSettingsArrowItem.m */,
+				B7E808961E252E5E0093013F /* CPSettingsLabelItem.h */,
+				B7E808971E252E5E0093013F /* CPSettingsLabelItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,6 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E808951E252A000093013F /* CPPushNoticeViewController.m in Sources */,
 				B73D57271E24EB5B00D1C701 /* CPTestViewController.m in Sources */,
 				B7B4FFD11E233CB600D9DB14 /* CPTabBar.m in Sources */,
 				B7B4FFCE1E233CA400D9DB14 /* CPTabBarViewController.m in Sources */,
@@ -706,6 +717,7 @@
 				B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */,
 				B7B4FFE61E238F2B00D9DB14 /* CPLoginViewController.m in Sources */,
 				B73D56FA1E246E8800D1C701 /* CPSettingsSwitchItem.m in Sources */,
+				B7E808981E252E5E0093013F /* CPSettingsLabelItem.m in Sources */,
 				B73D57001E248E9400D1C701 /* CPTestTableViewController.m in Sources */,
 				B73D57111E24C6AF00D1C701 /* CPProductCollectionViewController.m in Sources */,
 				B73D56F11E2469A200D1C701 /* CPSettingsGroup.m in Sources */,
