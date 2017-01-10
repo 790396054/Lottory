@@ -38,6 +38,7 @@
 		B7B4FFE61E238F2B00D9DB14 /* CPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4FFE51E238F2B00D9DB14 /* CPLoginViewController.m */; };
 		B7B4FFE91E238FA500D9DB14 /* CPSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4FFE81E238FA500D9DB14 /* CPSettingsTableViewController.m */; };
 		B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B4FFEB1E2394C000D9DB14 /* CPSettingsItem.m */; };
+		B7E808921E2520FC0093013F /* CPBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E808911E2520FC0093013F /* CPBaseTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		B7B4FFE81E238FA500D9DB14 /* CPSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSettingsTableViewController.m; sourceTree = "<group>"; };
 		B7B4FFEA1E2394C000D9DB14 /* CPSettingsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPSettingsItem.h; path = ../../Profile/Model/CPSettingsItem.h; sourceTree = "<group>"; };
 		B7B4FFEB1E2394C000D9DB14 /* CPSettingsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPSettingsItem.m; path = ../../Profile/Model/CPSettingsItem.m; sourceTree = "<group>"; };
+		B7E808901E2520FC0093013F /* CPBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBaseTableViewController.h; sourceTree = "<group>"; };
+		B7E808911E2520FC0093013F /* CPBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBaseTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +483,8 @@
 				B7B4FFE81E238FA500D9DB14 /* CPSettingsTableViewController.m */,
 				B73D56FE1E248E9400D1C701 /* CPTestTableViewController.h */,
 				B73D56FF1E248E9400D1C701 /* CPTestTableViewController.m */,
+				B7E808901E2520FC0093013F /* CPBaseTableViewController.h */,
+				B7E808911E2520FC0093013F /* CPBaseTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -696,6 +701,7 @@
 				B7B4FFE91E238FA500D9DB14 /* CPSettingsTableViewController.m in Sources */,
 				B7B4FFCB1E23381B00D9DB14 /* AppDelegate.m in Sources */,
 				B73D571F1E24DE4100D1C701 /* CPProductCell.m in Sources */,
+				B7E808921E2520FC0093013F /* CPBaseTableViewController.m in Sources */,
 				B73D571B1E24D63800D1C701 /* CPProduct.m in Sources */,
 				B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */,
 				B7B4FFE61E238F2B00D9DB14 /* CPLoginViewController.m in Sources */,

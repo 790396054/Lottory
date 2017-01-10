@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CPBaseTableViewController.h"
 
-@interface CPSettingsTableViewController : UITableViewController
+@interface CPSettingsTableViewController : CPBaseTableViewController
 
 @end
