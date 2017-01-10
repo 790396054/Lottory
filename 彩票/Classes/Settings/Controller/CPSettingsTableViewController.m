@@ -14,6 +14,7 @@
 #import "CPSettingsSwitchItem.h"
 #import "CPTestTableViewController.h"
 #import "MBProgressHUD+MJ.h"
+#import "CPProductCollectionViewController.h"
 
 @interface CPSettingsTableViewController ()
 /**数据集合*/
@@ -51,7 +52,7 @@
         };
         CPSettingsItem *moreShare = [CPSettingsItem itemWithTitle:@"分享" icon:@"MoreShare"];
         CPSettingsItem *moreMessage = [CPSettingsItem itemWithTitle:@"查看消息" icon:@"MoreMessage"];
-        CPSettingsItem *moreNetease = [CPSettingsItem itemWithTitle:@"产品推荐" icon:@"MoreNetease"];
+        CPSettingsItem *moreNetease = [CPSettingsArrowItem itemWithTitle:@"产品推荐" icon:@"MoreNetease" destVcCalss:[CPProductCollectionViewController class]];
         CPSettingsItem *moreAbout = [CPSettingsItem itemWithTitle:@"关于" icon:@"MoreAbout"];
         group2.item = @[moreHelp, moreUpdate, moreShare, moreMessage, moreNetease, moreAbout];
         

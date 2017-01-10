@@ -15,6 +15,13 @@
 		B73D57081E24BF8200D1C701 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D57041E24BF8200D1C701 /* MBProgressHUD+MJ.m */; };
 		B73D57091E24BF8200D1C701 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B73D57051E24BF8200D1C701 /* MBProgressHUD.bundle */; };
 		B73D570A1E24BF8200D1C701 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D57071E24BF8200D1C701 /* MBProgressHUD.m */; };
+		B73D57111E24C6AF00D1C701 /* CPProductCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D57101E24C6AF00D1C701 /* CPProductCollectionViewController.m */; };
+		B73D57161E24D61800D1C701 /* cywt.json in Resources */ = {isa = PBXBuildFile; fileRef = B73D57131E24D61800D1C701 /* cywt.json */; };
+		B73D57171E24D61800D1C701 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = B73D57141E24D61800D1C701 /* help.json */; };
+		B73D57181E24D61800D1C701 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = B73D57151E24D61800D1C701 /* products.json */; };
+		B73D571B1E24D63800D1C701 /* CPProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D571A1E24D63800D1C701 /* CPProduct.m */; };
+		B73D571F1E24DE4100D1C701 /* CPProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D571D1E24DE4100D1C701 /* CPProductCell.m */; };
+		B73D57201E24DE4100D1C701 /* CPProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73D571E1E24DE4100D1C701 /* CPProductCell.xib */; };
 		B7B4FF7B1E232C2000D9DB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF791E232C2000D9DB14 /* Main.storyboard */; };
 		B7B4FF7D1E232C2000D9DB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF7C1E232C2000D9DB14 /* Assets.xcassets */; };
 		B7B4FF801E232C2000D9DB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7B4FF7E1E232C2000D9DB14 /* LaunchScreen.storyboard */; };
@@ -64,6 +71,16 @@
 		B73D57051E24BF8200D1C701 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		B73D57061E24BF8200D1C701 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B73D57071E24BF8200D1C701 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B73D570F1E24C6AF00D1C701 /* CPProductCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProductCollectionViewController.h; sourceTree = "<group>"; };
+		B73D57101E24C6AF00D1C701 /* CPProductCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProductCollectionViewController.m; sourceTree = "<group>"; };
+		B73D57131E24D61800D1C701 /* cywt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cywt.json; sourceTree = "<group>"; };
+		B73D57141E24D61800D1C701 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		B73D57151E24D61800D1C701 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		B73D57191E24D63800D1C701 /* CPProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProduct.h; sourceTree = "<group>"; };
+		B73D571A1E24D63800D1C701 /* CPProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProduct.m; sourceTree = "<group>"; };
+		B73D571C1E24DE4100D1C701 /* CPProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPProductCell.h; sourceTree = "<group>"; };
+		B73D571D1E24DE4100D1C701 /* CPProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPProductCell.m; sourceTree = "<group>"; };
+		B73D571E1E24DE4100D1C701 /* CPProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPProductCell.xib; sourceTree = "<group>"; };
 		B7B4FF6D1E232C2000D9DB14 /* 彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7B4FF7A1E232C2000D9DB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7B4FF7C1E232C2000D9DB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +156,54 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		B73D570B1E24C69D00D1C701 /* Porduct */ = {
+			isa = PBXGroup;
+			children = (
+				B73D570C1E24C69D00D1C701 /* Controller */,
+				B73D570D1E24C69D00D1C701 /* Model */,
+				B73D570E1E24C69D00D1C701 /* View */,
+			);
+			path = Porduct;
+			sourceTree = "<group>";
+		};
+		B73D570C1E24C69D00D1C701 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B73D570F1E24C6AF00D1C701 /* CPProductCollectionViewController.h */,
+				B73D57101E24C6AF00D1C701 /* CPProductCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B73D570D1E24C69D00D1C701 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B73D57191E24D63800D1C701 /* CPProduct.h */,
+				B73D571A1E24D63800D1C701 /* CPProduct.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B73D570E1E24C69D00D1C701 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B73D571C1E24DE4100D1C701 /* CPProductCell.h */,
+				B73D571D1E24DE4100D1C701 /* CPProductCell.m */,
+				B73D571E1E24DE4100D1C701 /* CPProductCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B73D57121E24D61800D1C701 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B73D57131E24D61800D1C701 /* cywt.json */,
+				B73D57141E24D61800D1C701 /* help.json */,
+				B73D57151E24D61800D1C701 /* products.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B7B4FF641E232C2000D9DB14 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +240,7 @@
 		B7B4FF701E232C2000D9DB14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B73D57121E24D61800D1C701 /* Data */,
 				B7B4FFC21E23381B00D9DB14 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -381,6 +447,7 @@
 		B7B4FFD81E238EFA00D9DB14 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B73D570B1E24C69D00D1C701 /* Porduct */,
 				B7B4FFD91E238EFA00D9DB14 /* Controller */,
 				B7B4FFDE1E238EFA00D9DB14 /* Model */,
 				B7B4FFDF1E238EFA00D9DB14 /* View */,
@@ -567,8 +634,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7B4FF801E232C2000D9DB14 /* LaunchScreen.storyboard in Resources */,
+				B73D57161E24D61800D1C701 /* cywt.json in Resources */,
+				B73D57181E24D61800D1C701 /* products.json in Resources */,
 				B73D57091E24BF8200D1C701 /* MBProgressHUD.bundle in Resources */,
 				B7B4FF7D1E232C2000D9DB14 /* Assets.xcassets in Resources */,
+				B73D57171E24D61800D1C701 /* help.json in Resources */,
+				B73D57201E24DE4100D1C701 /* CPProductCell.xib in Resources */,
 				B7B4FF7B1E232C2000D9DB14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,10 +675,13 @@
 				B7B4FFD71E2371BD00D9DB14 /* CPNavigationController.m in Sources */,
 				B7B4FFE91E238FA500D9DB14 /* CPSettingsTableViewController.m in Sources */,
 				B7B4FFCB1E23381B00D9DB14 /* AppDelegate.m in Sources */,
+				B73D571F1E24DE4100D1C701 /* CPProductCell.m in Sources */,
+				B73D571B1E24D63800D1C701 /* CPProduct.m in Sources */,
 				B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */,
 				B7B4FFE61E238F2B00D9DB14 /* CPLoginViewController.m in Sources */,
 				B73D56FA1E246E8800D1C701 /* CPSettingsSwitchItem.m in Sources */,
 				B73D57001E248E9400D1C701 /* CPTestTableViewController.m in Sources */,
+				B73D57111E24C6AF00D1C701 /* CPProductCollectionViewController.m in Sources */,
 				B73D56F11E2469A200D1C701 /* CPSettingsGroup.m in Sources */,
 				B73D570A1E24BF8200D1C701 /* MBProgressHUD.m in Sources */,
 			);
