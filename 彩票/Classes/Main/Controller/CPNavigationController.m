@@ -15,15 +15,8 @@
 @implementation CPNavigationController
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    NSLog(@"%s", __func__);
-    
     viewController.hidesBottomBarWhenPushed = YES;
     return [super pushViewController:viewController animated:animated];
 }
-
-//-(void)showViewController:(UIViewController *)vc sender:(id)sender{
-//    
-//    
-//}
 
 @end

@@ -15,6 +15,7 @@
 #import "MBProgressHUD+MJ.h"
 #import "CPProductCollectionViewController.h"
 #import "CPPushTableViewController.h"
+#import "CPHelpViewController.h"
 
 @interface CPSettingsTableViewController ()
 
@@ -46,7 +47,7 @@
     // 第一组
     CPSettingsGroup *group1 = [[CPSettingsGroup alloc] init];
     CPSettingsItem *moreUpdate = [CPSettingsArrowItem itemWithTitle:@"检查新版本" icon:@"MoreUpdate"];
-    CPSettingsItem *moreHelp = [CPSettingsArrowItem itemWithTitle:@"帮助" icon:@"MoreHelp" destVcCalss:[CPTestTableViewController class]];
+    CPSettingsItem *moreHelp = [CPSettingsArrowItem itemWithTitle:@"帮助" icon:@"MoreHelp" destVcCalss:[CPHelpViewController class]];
     // 保存一段检测更新的代码
     moreUpdate.option = ^{
         // 显示蒙版

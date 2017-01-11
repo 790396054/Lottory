@@ -43,9 +43,6 @@
 #pragma mark - 代理方法
 -(void)tabBar:(CPTabBar *)tabBar didSelectedIndex:(NSInteger)index{
     self.selectedIndex = index;
-    
-    float devVersion = [[UIDevice currentDevice] batteryLevel];
-    NSLog(@"%f", devVersion);
 }
 
 @end
