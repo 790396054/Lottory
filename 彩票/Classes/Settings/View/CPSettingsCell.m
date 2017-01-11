@@ -52,7 +52,7 @@
     CPSettingsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     if (cell == nil) {
-        cell = [[CPSettingsCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [[CPSettingsCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     return cell;
 }
@@ -74,6 +74,9 @@
     }
     if (self.item.icon.length) {
         self.imageView.image = [UIImage imageNamed:self.item.icon];
+    }
+    if (self.item.subTitle.length){
+        self.detailTextLabel.text = self.item.subTitle;
     }
 }
 

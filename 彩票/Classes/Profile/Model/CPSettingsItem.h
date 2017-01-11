@@ -15,6 +15,9 @@ typedef void(^CPSettingsItemOption)();
 @property (nonatomic, copy) NSString *title;
 /**图标*/
 @property (nonatomic, copy) NSString *icon;
+/**子标题*/
+@property (nonatomic, copy) NSString *subTitle;
+
 /**
  保存一段代码,在恰当的时候调用
  */

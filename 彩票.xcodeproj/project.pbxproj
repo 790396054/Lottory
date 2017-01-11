@@ -39,6 +39,9 @@
 		B72FF7291E25D30100244908 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = B72FF70C1E25D30100244908 /* y11_howto.html */; };
 		B72FF72A1E25D30100244908 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = B72FF70D1E25D30100244908 /* znzh.html */; };
 		B72FF72D1E25D5B900244908 /* CPHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72FF72C1E25D5B900244908 /* CPHtmlViewController.m */; };
+		B72FF7311E2603E400244908 /* CPShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72FF7301E2603E400244908 /* CPShareViewController.m */; };
+		B72FF7351E2606E200244908 /* CPAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72FF7341E2606E200244908 /* CPAboutViewController.m */; };
+		B72FF7381E26093100244908 /* CPAboutHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B72FF7371E26093100244908 /* CPAboutHeaderView.m */; };
 		B73D56F11E2469A200D1C701 /* CPSettingsGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D56F01E2469A200D1C701 /* CPSettingsGroup.m */; };
 		B73D56F41E2469C100D1C701 /* CPSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D56F31E2469C100D1C701 /* CPSettingsCell.m */; };
 		B73D56FA1E246E8800D1C701 /* CPSettingsSwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B73D56F91E246E8800D1C701 /* CPSettingsSwitchItem.m */; };
@@ -128,6 +131,12 @@
 		B72FF70D1E25D30100244908 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
 		B72FF72B1E25D5B900244908 /* CPHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPHtmlViewController.h; sourceTree = "<group>"; };
 		B72FF72C1E25D5B900244908 /* CPHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPHtmlViewController.m; sourceTree = "<group>"; };
+		B72FF72F1E2603E400244908 /* CPShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPShareViewController.h; sourceTree = "<group>"; };
+		B72FF7301E2603E400244908 /* CPShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPShareViewController.m; sourceTree = "<group>"; };
+		B72FF7331E2606E200244908 /* CPAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAboutViewController.h; sourceTree = "<group>"; };
+		B72FF7341E2606E200244908 /* CPAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAboutViewController.m; sourceTree = "<group>"; };
+		B72FF7361E26093100244908 /* CPAboutHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAboutHeaderView.h; sourceTree = "<group>"; };
+		B72FF7371E26093100244908 /* CPAboutHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAboutHeaderView.m; sourceTree = "<group>"; };
 		B73D56EF1E2469A200D1C701 /* CPSettingsGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSettingsGroup.h; sourceTree = "<group>"; };
 		B73D56F01E2469A200D1C701 /* CPSettingsGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSettingsGroup.m; sourceTree = "<group>"; };
 		B73D56F21E2469C100D1C701 /* CPSettingsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSettingsCell.h; sourceTree = "<group>"; };
@@ -289,6 +298,26 @@
 				B72FF70D1E25D30100244908 /* znzh.html */,
 			);
 			path = Html;
+			sourceTree = "<group>";
+		};
+		B72FF72E1E2603D300244908 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				B72FF72F1E2603E400244908 /* CPShareViewController.h */,
+				B72FF7301E2603E400244908 /* CPShareViewController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		B72FF7321E2606D100244908 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				B72FF7331E2606E200244908 /* CPAboutViewController.h */,
+				B72FF7341E2606E200244908 /* CPAboutViewController.m */,
+				B72FF7361E26093100244908 /* CPAboutHeaderView.h */,
+				B72FF7371E26093100244908 /* CPAboutHeaderView.m */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 		B73D57011E24BF8200D1C701 /* Lib */ = {
@@ -616,6 +645,8 @@
 		B7B4FFD81E238EFA00D9DB14 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				B72FF7321E2606D100244908 /* About */,
+				B72FF72E1E2603D300244908 /* Share */,
 				B72FF6E61E25CEDC00244908 /* Help */,
 				B73D57211E24E85300D1C701 /* Push */,
 				B73D570B1E24C69D00D1C701 /* Porduct */,
@@ -873,6 +904,7 @@
 				B73D57271E24EB5B00D1C701 /* CPTestViewController.m in Sources */,
 				B7B4FFD11E233CB600D9DB14 /* CPTabBar.m in Sources */,
 				B72FF6EF1E25CF1A00244908 /* CPHelp.m in Sources */,
+				B72FF7351E2606E200244908 /* CPAboutViewController.m in Sources */,
 				B7B4FFCE1E233CA400D9DB14 /* CPTabBarViewController.m in Sources */,
 				B7B4FFCA1E23381B00D9DB14 /* main.m in Sources */,
 				B73D56FD1E246EB100D1C701 /* CPSettingsArrowItem.m in Sources */,
@@ -890,12 +922,14 @@
 				B72FF72D1E25D5B900244908 /* CPHtmlViewController.m in Sources */,
 				B7B4FFEC1E2394C000D9DB14 /* CPSettingsItem.m in Sources */,
 				B7B4FFE61E238F2B00D9DB14 /* CPLoginViewController.m in Sources */,
+				B72FF7381E26093100244908 /* CPAboutHeaderView.m in Sources */,
 				B73D56FA1E246E8800D1C701 /* CPSettingsSwitchItem.m in Sources */,
 				B7E808981E252E5E0093013F /* CPSettingsLabelItem.m in Sources */,
 				B73D57001E248E9400D1C701 /* CPTestTableViewController.m in Sources */,
 				B73D57111E24C6AF00D1C701 /* CPProductCollectionViewController.m in Sources */,
 				B73D56F11E2469A200D1C701 /* CPSettingsGroup.m in Sources */,
 				B73D570A1E24BF8200D1C701 /* MBProgressHUD.m in Sources */,
+				B72FF7311E2603E400244908 /* CPShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

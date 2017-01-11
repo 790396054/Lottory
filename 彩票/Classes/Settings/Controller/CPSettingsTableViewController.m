@@ -16,6 +16,8 @@
 #import "CPProductCollectionViewController.h"
 #import "CPPushTableViewController.h"
 #import "CPHelpViewController.h"
+#import "CPShareViewController.h"
+#import "CPAboutViewController.h"
 
 @interface CPSettingsTableViewController ()
 
@@ -52,7 +54,7 @@
     moreUpdate.option = ^{
         // 显示蒙版
         [MBProgressHUD showMessage:@"正在检测更新中。。。"];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             // 隐藏蒙版
             [MBProgressHUD hideHUD];
             // 弹出提醒
@@ -60,10 +62,10 @@
             [alert show];
         });
     };
-    CPSettingsItem *moreShare = [CPSettingsItem itemWithTitle:@"分享" icon:@"MoreShare"];
-    CPSettingsItem *moreMessage = [CPSettingsItem itemWithTitle:@"查看消息" icon:@"MoreMessage"];
+    CPSettingsItem *moreShare = [CPSettingsArrowItem itemWithTitle:@"分享" icon:@"MoreShare" destVcCalss:[CPShareViewController class]];
+    CPSettingsItem *moreMessage = [CPSettingsArrowItem itemWithTitle:@"查看消息" icon:@"MoreMessage" destVcCalss:[CPProductCollectionViewController class]];
     CPSettingsItem *moreNetease = [CPSettingsArrowItem itemWithTitle:@"产品推荐" icon:@"MoreNetease" destVcCalss:[CPProductCollectionViewController class]];
-    CPSettingsItem *moreAbout = [CPSettingsItem itemWithTitle:@"关于" icon:@"MoreAbout"];
+    CPSettingsItem *moreAbout = [CPSettingsArrowItem itemWithTitle:@"关于" icon:@"MoreAbout" destVcCalss:[CPAboutViewController class]];
     group1.item = @[moreHelp, moreUpdate, moreShare, moreMessage, moreNetease, moreAbout];
     return group1;
 }
