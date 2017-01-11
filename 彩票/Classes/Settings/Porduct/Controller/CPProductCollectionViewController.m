@@ -89,6 +89,17 @@ static NSString *ID = @"cell";
     CPProduct *product = self.dataArray[indexPath.item];
     NSString *title = [NSString stringWithFormat:@"点击了%@", product.title];
     [MBProgressHUD showSuccess:title];
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    NSString *urlStr = [NSString stringWithFormat:@"%@://%@", product.customUrl, product.ID];
+    NSURL *url = [NSURL URLWithString:urlStr];
+    if ([app canOpenURL:url]) { // 能打开这个 URL，手机上安装了这个应用
+        [app openURL:url];
+        NSLog(@"yes%@://%@",product.customUrl, product.ID);
+    } else { // 不能打开，手机上没有安装这个应用
+        [app openURL:[NSURL URLWithString:product.url]];
+        NSLog(@"no%@",product.url);
+    }
 }
 
 @end

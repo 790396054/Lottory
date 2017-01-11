@@ -34,7 +34,7 @@
     CPSettingsArrowItem *phone = [CPSettingsArrowItem itemWithTitle:@"客服电话" icon:nil];
     phone.subTitle = @"020-828336956";
     phone.option = ^{
-        NSString *url = [NSString stringWithFormat:@"tel://%@", phone.subTitle];
+        NSString *url = [NSString stringWithFormat:@"tel://02082333985"];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
     };
     
