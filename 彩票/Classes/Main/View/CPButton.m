@@ -11,7 +11,8 @@
 @implementation CPButton
 
 -(void)setHighlighted:(BOOL)highlighted{
-    // 取消高亮
+    
+    // 取消高亮 
 }
 
 @end
