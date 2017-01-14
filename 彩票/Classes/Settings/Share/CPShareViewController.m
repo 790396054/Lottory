@@ -12,7 +12,6 @@
 #import <MessageUI/MessageUI.h>
 
 @interface CPShareViewController ()<MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
-@property (nonatomic, assign) int age;
 @end
 
 @implementation CPShareViewController
@@ -35,7 +34,6 @@
         vc.body = @"测试短信"; // 短信内容
         vc.recipients = @[@"10086", @"18569693256"]; // 收件人列表
         vc.messageComposeDelegate = share; //用若指针，解决block中的循环引用，导致内存泄漏问题
-        share.age;
         // 显示控制器
         [share presentViewController:vc animated:YES completion:nil]; //用若指针，解决block中的循环引用，导致内存泄漏问题
     };
