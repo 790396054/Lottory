@@ -12,7 +12,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface CPShareViewController ()<MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
-
+@property (nonatomic, assign) int age;
 @end
 
 @implementation CPShareViewController
@@ -28,14 +28,16 @@
     
     CPSettingsArrowItem *sinaShare = [CPSettingsArrowItem itemWithTitle:@"新浪分享" icon:@"WeiboSina"];
     CPSettingsArrowItem *messageShare = [CPSettingsArrowItem itemWithTitle:@"短信分享" icon:@"SmsShare"];
+    // 用若指针，解决block中的循环引用，导致内存泄漏问题
+    __weak CPShareViewController *share = self;
     messageShare.option = ^{
         MFMessageComposeViewController *vc = [[MFMessageComposeViewController alloc] init];
         vc.body = @"测试短信"; // 短信内容
         vc.recipients = @[@"10086", @"18569693256"]; // 收件人列表
-        vc.messageComposeDelegate = self;
-        
+        vc.messageComposeDelegate = share; //用若指针，解决block中的循环引用，导致内存泄漏问题
+        share.age;
         // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
+        [share presentViewController:vc animated:YES completion:nil]; //用若指针，解决block中的循环引用，导致内存泄漏问题
     };
     
     CPSettingsArrowItem *emailShare = [CPSettingsArrowItem itemWithTitle:@"邮件分享" icon:@"MailShare"];
@@ -62,9 +64,9 @@
         NSData *data = UIImagePNGRepresentation(image);
         [vc addAttachmentData:data mimeType:@"image/png" fileName:@"阿狸头像.png"];
         // 设置代理
-        vc.mailComposeDelegate = self;
+        vc.mailComposeDelegate = share;
         // 显示控制器
-        [self presentViewController:vc animated:YES completion:nil];
+        [share presentViewController:vc animated:YES completion:nil];
         
     };
     group.item = @[sinaShare, messageShare, emailShare];
@@ -75,6 +77,10 @@
 // 短信发送的代理方法回调。
 -(void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result{
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)dealloc{
+    NSLog(@"%%delloc");
 }
 
 //邮件发送后的代理方法回调，发完后会自动回到原应用
