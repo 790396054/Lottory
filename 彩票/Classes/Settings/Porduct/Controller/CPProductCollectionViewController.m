@@ -96,7 +96,8 @@ static NSString *ID = @"cell";
     if ([app canOpenURL:url]) { // 能打开这个 URL，手机上安装了这个应用
         [app openURL:url];
     } else { // 不能打开，手机上没有安装这个应用
-        [app openURL:[NSURL URLWithString:product.url]]; 
+        [app openURL:[NSURL URLWithString:product.url]];
+        
     }
 }
 
