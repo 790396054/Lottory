@@ -28,7 +28,7 @@
     [self.view addSubview:tabtar];
     
     // 获取应用程序中的所有导航条
-    // 获取所有导航条外观
+    // 获取所有导航条外观 
     UINavigationBar *bar = [UINavigationBar appearance];
     [bar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
     
